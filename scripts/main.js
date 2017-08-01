@@ -32,3 +32,9 @@ if(!localStorage.getItem('name')) {
 myButton.onclick = function() {
   setUserName();
 }
+
+// You can also do this
+var clickAlert = function() {
+	setUserName();
+}
+myButton.onclick = clickAlert;
